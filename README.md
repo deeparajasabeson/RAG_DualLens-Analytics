@@ -1,7 +1,13 @@
 # RAG_DualLens-Analytics
 Project created to showcase how a RAG System works and how we could evaluate its results.
 <img width="918" height="207" alt="image" src="https://github.com/user-attachments/assets/97d32f8c-73d0-4cb3-822a-85a8f515eaed" />
+💡 The Solution
+DualLens 2.0 — a RAG system with a built-in quality-control layer and a self-improving prompt:
 
+Grounds every answer in source documents — retrieval + a strict "answer only from context, else say I don't know" contract.
+Measures answer quality automatically — an LLM judge scores every answer on three dimensions, cross-checked against an objective gold dataset.
+Improves its own prompt — GEPA reads failure feedback and rewrites the prompt, with the improvement proven on questions the optimizer never saw.
+Routes outputs by confidence — the final investment ranking carries a confidence score; low-confidence outputs are held for human review, never silently trusted.
 <a name='section2'></a>
 ## 2️⃣ **System Architecture Overview**
 
